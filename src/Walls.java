@@ -22,8 +22,8 @@ public class Walls
         this.x = x;
         this.y = y;
         size = 25;
-        xspeed = 2;
-        yspeed = 2;
+        xspeed = 1;
+        yspeed = 1;
         int random1 = (int)(Math.random()*200)+1;
         int random2 = (int)(Math.random()*200)+1;
         int random3 = (int)(Math.random()*200)+1;
@@ -58,6 +58,24 @@ public class Walls
     }
     public void randomDirection(){
 
+    }
+    public void setPos(int xpos, int ypos){
+        x = xpos;
+        y = ypos;
+    }
+    public void direction(){
+        if(x < 250){
+            collision();
+        }
+        if(x > 250){
+            collision();
+        }
+        if(y < 250){
+            collision();
+        }
+        if(y > 250){
+            collision();
+        }
     }
 
 

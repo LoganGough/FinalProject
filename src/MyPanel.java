@@ -8,6 +8,9 @@ public class MyPanel extends JPanel
 {
 
 
+    int xp;
+    int yp;
+
     Walls[] balls = new Walls[10];
 
 
@@ -18,6 +21,32 @@ public class MyPanel extends JPanel
         for(int i = 0;i < 10;i++){
             balls[i] = new Walls(250,300);
         }
+
+
+        setFocusable(true);
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                super.mouseDragged(e);
+                System.out.println("hi");
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                super.mousePressed(e);
+                xp = e.getX();
+                yp = e.getY();
+                balls[0].setPos(xp-12, yp-12);
+            }
+            @Override
+            public void mouseClicked(MouseEvent e) {
+//                super.mouseClicked(e);
+//                xp = e.getX();
+//                yp = e.getY();
+            }
+
+
+        });
     }
     @Override
     public void paintComponent(Graphics g){
@@ -34,7 +63,9 @@ public class MyPanel extends JPanel
 
 
             balls[0].draw(g);
-            balls[0].collision();
+            balls[0].direction();
+
+
 
 
 

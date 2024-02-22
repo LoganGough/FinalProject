@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added JOptionPane">
-      <change afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
+    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added walls and bounce off of walls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +65,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706894800186</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added walls and bounce off of walls">
+      <option name="closed" value="true" />
+      <created>1708450051197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708450051197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Project" />
     <MESSAGE value="Added JOptionPane" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JOptionPane" />
+    <MESSAGE value="Added walls and bounce off of walls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added walls and bounce off of walls" />
   </component>
 </project>
