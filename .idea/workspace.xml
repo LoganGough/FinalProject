@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added walls and bounce off of walls">
+    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added mouse listener">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
@@ -73,13 +73,22 @@
       <option name="project" value="LOCAL" />
       <updated>1708450051197</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added mouse listener">
+      <option name="closed" value="true" />
+      <created>1708622857664</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708622857664</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Project" />
     <MESSAGE value="Added JOptionPane" />
     <MESSAGE value="Added walls and bounce off of walls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added walls and bounce off of walls" />
+    <MESSAGE value="Added mouse listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mouse listener" />
   </component>
 </project>

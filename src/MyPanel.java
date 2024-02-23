@@ -47,6 +47,13 @@ public class MyPanel extends JPanel
 
 
         });
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                balls[0].collision();
+            }
+        });
     }
     @Override
     public void paintComponent(Graphics g){
@@ -55,8 +62,8 @@ public class MyPanel extends JPanel
         g.fillRect(100, 100, 10, 500);
         g.fillRect(100, 600, 500, 10);
         g.fillRect(590, 100, 10, 500);
-        g.fillRect(100, 100, 250, 10);
-        g.fillRect(490, 100, 100, 10);
+        g.fillRect(100, 100, 100, 10);
+        g.fillRect(350, 100, 250, 10);
 //        g.fillOval(400, 400, 20, 20 );
 
 
@@ -64,6 +71,7 @@ public class MyPanel extends JPanel
 
             balls[0].draw(g);
             balls[0].direction();
+            balls[0].finish();
 
 
 

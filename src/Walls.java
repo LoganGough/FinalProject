@@ -43,18 +43,16 @@ public class Walls
         if(x < 100){
             xspeed = xspeed*-1;
         }
-        else if(x > 520){
+        else if(x > 580){
             xspeed = xspeed*-1;
         }
         else if(y < 100){
             yspeed = yspeed*-1;
         }
-        else if(y > 520){
+        else if(y > 580){
             yspeed = yspeed*-1;
         }
-        else if (x < 250 && x > 100){
-            xspeed = xspeed;
-        }
+
     }
     public void randomDirection(){
 
@@ -77,6 +75,19 @@ public class Walls
             collision();
         }
     }
+    public void moving(){
+
+        x = 100;
+        y = 100;
+        xspeed = 0;
+        yspeed = 0;
+    }
+    public void finish(){
+        if (x < 350 && x > 100 && y == 100){
+           moving();
+        }
+    }
+
 
 
 
