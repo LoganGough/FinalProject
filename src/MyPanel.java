@@ -59,11 +59,7 @@ public class MyPanel extends JPanel
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         g.setColor(Color.WHITE);
-        g.fillRect(100, 100, 10, 500);
-        g.fillRect(100, 600, 500, 10);
-        g.fillRect(590, 100, 10, 500);
-        g.fillRect(100, 100, 100, 10);
-        g.fillRect(350, 100, 250, 10);
+        balls[0].drawCube1(g);
 //        g.fillOval(400, 400, 20, 20 );
 
 
@@ -71,7 +67,14 @@ public class MyPanel extends JPanel
 
             balls[0].draw(g);
             balls[0].direction();
-            balls[0].finish();
+//            balls[0].finish();
+            boolean blah = balls[0].restart(g, balls);
+            if(blah == true){
+
+                Main.frame.getContentPane().removeAll();
+                Main.frame.getContentPane().add(new SecondPanel());
+                balls[0].drawCube2(g);
+            }
 
 
 
