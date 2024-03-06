@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added mouse listener made game do something">
-      <change afterPath="$PROJECT_DIR$/src/SecondPanel.java" afterDir="false" />
+    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="Added mouse listener made game do something&#10;made second level">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SecondPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LoganGough"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LoganGough&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -105,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708709218016</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added mouse listener made game do something&#10;made second level">
+      <option name="closed" value="true" />
+      <created>1709659642409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709659642409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +132,17 @@
     <MESSAGE value="Added walls and bounce off of walls" />
     <MESSAGE value="Added mouse listener" />
     <MESSAGE value="Added mouse listener made game do something" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mouse listener made game do something" />
+    <MESSAGE value="Added mouse listener made game do something&#10;made second level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mouse listener made game do something&#10;made second level" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

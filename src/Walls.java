@@ -11,10 +11,7 @@ public class Walls
     private int centerx, centery;
     private int radius;
     private int speed;
-    private boolean trueFalse;
-
-
-
+    public static int count;
 
 
     public Walls(int x, int y){
@@ -55,28 +52,12 @@ public class Walls
         }
 
     }
-    public void randomDirection(){
-
-    }
     public void setPos(int xpos, int ypos){
         x = xpos;
         y = ypos;
     }
-    public void direction(){
-        collision();
-//        if(x < 250){
-//            collision();
-//        }
-//        if(x > 250){
-//            collision();
-//        }
-//        if(y < 250){
-//            collision();
-//        }
-//        if(y > 250){
-//            collision();
-//        }
-    }
+
+//
     public void moving(){
 
         x = 300;
@@ -89,30 +70,19 @@ public class Walls
 
         }
     }
-    public boolean restart(Graphics g2, Walls[] blah){
+    public boolean restart(){
+
         if (x < 350 && x > 150 && y == 100) {
 
             return true;
+
         }
         else{
             return false;
         }
     }
-    public void drawCube1(Graphics g2){
-        g2.fillRect(100, 100, 10, 500);
-        g2.fillRect(100, 600, 500, 10);
-        g2.fillRect(590, 100, 10, 500);
-        g2.fillRect(100, 100, 100, 10);
-        g2.fillRect(350, 100, 250, 10);
-    }
-public void drawCube2(Graphics g2){
-    g2.fillRect(100, 100, 10, 500);
-    g2.fillRect(100, 600, 500, 10);
-    g2.fillRect(590, 100, 10, 500);
-    g2.fillRect(100, 100, 500, 10);
 
 
-}
 
 
 
