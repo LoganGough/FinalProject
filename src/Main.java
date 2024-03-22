@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Main {
     public static JFrame frame = new JFrame();
@@ -12,7 +14,14 @@ public class Main {
         frame.setSize(800,800);
 
 
+frame.addKeyListener(new KeyAdapter() {
+    @Override
+    public void keyTyped(KeyEvent e) {
+        super.keyTyped(e);
+        int key = e.getKeyCode();
 
+    }
+});
 
 
 

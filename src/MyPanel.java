@@ -14,6 +14,7 @@ public class MyPanel extends JPanel
     int yp;
 
     Walls[] balls = new Walls[10];
+    boolean moving = false;
 boolean blah = false;
 
 
@@ -22,10 +23,24 @@ boolean blah = false;
 
     public MyPanel() {
         setBackground(Color.BLACK);
-        balls[0] = new Walls(250,300);
+        balls[0] = new Walls(250,500);
 
 
         setFocusable(true);
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                System.out.println(e.getKeyCode());
+                if(e.getKeyCode() == 37){
+                    balls[0].moveLeft();
+                }
+
+                if(e.getKeyCode() == 39){
+                    balls[0].moveRight();
+                }
+
+            }
+        });
         addMouseListener(new MouseAdapter() {
 
             @Override
@@ -38,13 +53,8 @@ boolean blah = false;
 
 
         });
-        addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                balls[0].collision();
-            }
-        });
+
+
     }
     @Override
     public void paintComponent(Graphics g){
@@ -56,9 +66,14 @@ boolean blah = false;
         g.fillRect(100, 100, 100, 10);
         g.fillRect(350, 100, 250, 10);
 
+
+
             balls[0].draw(g);
             balls[0].collision();
+            balls[0].out();
         blah = balls[0].restart();
+
+        balls[0].moves();
             if(blah){
 
                 Main.frame.getContentPane().removeAll();
@@ -71,7 +86,7 @@ boolean blah = false;
 
         if(blah == false){
             try {
-                Thread.sleep(1);
+                Thread.sleep(10);
             } catch (Exception e) {
                 System.out.println(e);
             }

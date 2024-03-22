@@ -36,19 +36,18 @@ public class Walls
 
 
     public void collision(){
-        x+= xspeed;
-        y+= yspeed;
+
         if(x < 100){
-            xspeed = xspeed*-1;
+            reset();
         }
         else if(x > 580){
-            xspeed = xspeed*-1;
+            reset();
         }
         else if(y < 100){
-            yspeed = yspeed*-1;
+            reset();
         }
         else if(y > 580){
-            yspeed = yspeed*-1;
+            reset();
         }
 
     }
@@ -56,23 +55,39 @@ public class Walls
         x = xpos;
         y = ypos;
     }
+    public void reset(){
+        x = 250;
+        y = 500;
+    }
 
 //
-    public void moving(){
-
-        x = 300;
-        y = 300;
+    public void moveRight(){
+        for(int i = 0;i < 21;i++) {
+            x ++;
+        }
+    }
+    public void moveLeft(){
+        for(int i = 0;i < 21;i++) {
+            x--;
+        }
 
     }
+
+
+    public void moves(){
+        y-=.5;
+    }
+
     public void finish(){
-        if (x < 350 && x > 150 && y == 100){
-           moving();
+        if (x < 350 && x > 150 && y == 105){
+           x = 300;
+           y=200;
 
         }
     }
     public boolean restart(){
 
-        if (x < 350 && x > 150 && y == 100) {
+        if (x < 350 && x > 175 && y == 105) {
 
             return true;
 
@@ -82,6 +97,20 @@ public class Walls
         }
     }
 
+    public void out(){
+        if(x > 500 && x < 100){
+            System.out.println("hi");
+        }
+        else if((y > 500 && y < 100)){
+            System.out.println("hi");
+        }
+    }
+    public boolean end2(){
+        if(x > 100 && y > 590){
+            return true;
+        }
+        return false;
+    }
 
 
 

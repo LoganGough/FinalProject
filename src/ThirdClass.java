@@ -3,19 +3,19 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class SecondPanel extends JPanel
+public class ThirdClass extends JPanel
 {
 
     int xp;
     int yp;
 
-    Walls[] balls2 = new Walls[5];
+    Walls[] balls3 = new Walls[5];
 
 
 
-    public SecondPanel() {
+    public ThirdClass() {
         setBackground(Color.BLACK);
-        balls2[0] = new Walls(250, 300);
+        balls3[0] = new Walls(250, 300);
         addMouseListener(new MouseAdapter() {
 
             @Override
@@ -23,7 +23,7 @@ public class SecondPanel extends JPanel
                 super.mousePressed(e);
                 xp = e.getX();
                 yp = e.getY();
-                balls2[0].setPos(xp-12, yp-12);
+                balls3[0].setPos(xp-12, yp-12);
             }
 
 
@@ -32,7 +32,7 @@ public class SecondPanel extends JPanel
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                balls2[0].collision();
+                balls3[0].collision();
             }
         });
 
@@ -42,21 +42,14 @@ public class SecondPanel extends JPanel
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        g.setColor(Color.green);
+        g.setColor(Color.red);
         g.fillRect(100, 100, 10, 450);
         g.fillRect(100, 600, 500, 10);
         g.fillRect(590, 100, 10, 500);
         g.fillRect(100, 100, 500, 10);
-        balls2[0].draw(g);
-        balls2[0].collision();
-        boolean blah = balls2[0].end2();
-        if(blah){
-            Main.frame.getContentPane().removeAll();
-            System.out.println("hi");
+        balls3[0].draw(g);
+        balls3[0].collision();
 
-            Main.frame.getContentPane().add(new ThirdClass());
-            Main.frame.setVisible(true);
-        }
 
 
 
