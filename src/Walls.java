@@ -9,9 +9,8 @@ public class Walls
     private int yspeed;
     private int x, y;
     private int centerx, centery;
-    private int radius;
-    private int speed;
-    public static int count;
+
+
 
 
     public Walls(int x, int y){
@@ -56,14 +55,14 @@ public class Walls
         y = ypos;
     }
     public void reset(){
-        x = 250;
-        y = 500;
+        x = 300;
+        y = 550;
     }
 
-//
+
     public void moveRight(){
         for(int i = 0;i < 21;i++) {
-            x ++;
+            x++;
         }
     }
     public void moveLeft(){
@@ -72,19 +71,22 @@ public class Walls
         }
 
     }
+    public void level1Restart(){
+        if(y == 400 && x < 400 && x > 100){
+            reset();
+        }
+    }
+    public void level1RestartAgain(){
+        if(y==400&&x >500){
+            reset();
+        }
+    }
 
 
     public void moves(){
         y-=.5;
     }
 
-    public void finish(){
-        if (x < 350 && x > 150 && y == 105){
-           x = 300;
-           y=200;
-
-        }
-    }
     public boolean restart(){
 
         if (x < 350 && x > 175 && y == 105) {
@@ -97,14 +99,7 @@ public class Walls
         }
     }
 
-    public void out(){
-        if(x > 500 && x < 100){
-            System.out.println("hi");
-        }
-        else if((y > 500 && y < 100)){
-            System.out.println("hi");
-        }
-    }
+
     public boolean end2(){
         if(x > 100 && y > 590){
             return true;
