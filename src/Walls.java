@@ -1,11 +1,19 @@
 import java.awt.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Walls
 {
 
+    public static boolean up = true;
     private int size;
     private Color color;
+    public static boolean side = true;
     private int xspeed;
+    private int height;
     private int yspeed;
     private int x, y;
     private int centerx, centery;
@@ -26,13 +34,35 @@ public class Walls
         int random3 = (int)(Math.random()*200)+1;
         color = new Color(255, 255, 255);
     }
+    public Walls(int x, int y, int width){
+        this.x = x;
+        this.y = y;
+        this.size = width;
+    }
+    public Walls(int x, int y, int width, int height){
+        this.x = x;
+        this.y = y;
+        this.size = width;
+        this.height = height;
+    }
     public void draw(Graphics g2){
 
         g2.setColor(color);
         g2.fillOval(x,y,size,size);
 
     }
+    public void draw2(Graphics g2){
+        g2.setColor(Color.red);
+        g2.fillRect(x,y,size,10);
+        g2.setColor(Color.white);
 
+
+    }
+
+public void draw3(Graphics g2){
+        g2.setColor(Color.red);
+        g2.fillRect(x, y, 10, height);
+}
 
     public void collision(){
 
@@ -49,10 +79,6 @@ public class Walls
             reset();
         }
 
-    }
-    public void setPos(int xpos, int ypos){
-        x = xpos;
-        y = ypos;
     }
     public void reset(){
         x = 300;
@@ -77,7 +103,7 @@ public class Walls
         }
     }
     public void level1RestartAgain(){
-        if(y==400&&x >500){
+        if(y==400&& x >475){
             reset();
         }
     }
@@ -107,6 +133,73 @@ public class Walls
         return false;
     }
 
+
+
+    public void boost(){
+        y-=10;
+    }
+    public void slow() {
+        y+=5;
+    }
+    public void delete(){
+        x=1000;
+        y=1000;
+    }
+public void level2Restart(){
+        if(y==200&&(x<200||x >275)){
+            reset();
+    }
+}
+
+public void level3Restart(){
+        if(y==300 && x < 500){
+            reset();
+        }
+}
+public void level4Restart(){
+        if(y==500&&x>150){
+            reset();
+        }
+}
+public void pause(){
+        y+=1;
+}
+public void laser(){
+
+    if (y == 100) {
+        up = false;
+    }
+    else if(y==600){
+        up = true;
+    }
+        if(up) {
+            y-=1;
+        }
+        else if(up == false){
+            y+=1;
+        }
+
+}
+public void laser2(){
+        if(x==100){
+            side = false;
+        }
+        else if(x==600){
+            side = true;
+        }
+        if(side){
+            x-=1;
+        }
+        else if(side == false){
+            x+=1;
+        }
+}
+public int getY(){
+        return y;
+}
+public int getX(){
+        return x;
+}
 
 
 
