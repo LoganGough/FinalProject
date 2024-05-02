@@ -5,6 +5,8 @@ public class MyPanel extends JPanel
 {
     Walls[] balls = new Walls[10];
     Walls[] laser = new Walls[2];
+
+    static Font mainFont = new Font("Sanserif", Font.PLAIN, 30);
 boolean blah = false;
 int i = 0;
 int o = 0;
@@ -69,10 +71,14 @@ String timer = "";
         g.fillRect(500, 400, 100, 10);
 
         if(i < 4) {
-            k += .025;
+            k += .012;
         }
         timer = "" + k;
+        g.setFont(mainFont);
+        String message = "Stage " + (level + 1) + "\n" + "level " + (i + 1);
         g.drawString(timer,700,50);
+        g.drawString(message, 275, 50);
+
 
 
 
@@ -89,12 +95,7 @@ String timer = "";
             int laserY = laser[0].getY();
             int ballX = balls[i].getX();
             int laserX = laser[1].getX();
-            if(o%2==0){
 
-            }
-            else if(ballX == laserX || ballX == laserX -1 || ballX == laserX + 1){
-                balls[i].reset();
-            }
 
             if(o%2==0){
 
@@ -146,10 +147,15 @@ String timer = "";
             if(level == 2){
                 laser[0].draw2(g);
                 laser[0].laser();
-                int ballY =  balls[i].getY();
-                int laserY = laser[0].getY();
+                int ballX =  balls[i].getX();
+                int laserX = laser[1].getX();
                 laser[1].draw3(g);
                 laser[1].laser2();
+
+
+                int ballY =  balls[i].getY();
+                int laserY = laser[0].getY();
+
 
                 if(o%2==0){
 
@@ -157,6 +163,21 @@ String timer = "";
 
 
                 else if((ballY == laserY)|| ballY == laserY + 1 || ballY == laserY - 1) {
+                    balls[i].reset();
+                }
+                if(o%2==0){
+
+                }
+                else if(ballX == laserX || ballX == laserX -1 || ballX == laserX + 1
+                        || ballX == laserX + 2 || ballX == laserX - 2 || ballX == laserX + 3 || ballX == laserX - 3
+                        || ballX == laserX + 4 || ballX == laserX - 4  || ballX == laserX + 5
+                        || ballX == laserX - 5 || ballX == laserX + 6 || ballX == laserX - 6
+                        || ballX == laserX + 7 || ballX == laserX - 7  || ballX == laserX + 8
+                        || ballX == laserX - 8 || ballX == laserX + 9 || ballX == laserX - 9
+                        || ballX == laserX + 10 || ballX == laserX - 10  || ballX == laserX + 11
+                        || ballX == laserX - 11 || ballX == laserX + 12 || ballX == laserX - 12
+                        || ballX == laserX + 13 || ballX == laserX - 13  || ballX == laserX + 14
+                        || ballX == laserX - 14 || ballX == laserX + 15 || ballX == laserX - 15){
                     balls[i].reset();
                 }
             }

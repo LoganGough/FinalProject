@@ -157,7 +157,7 @@ public void level3Restart(){
         }
 }
 public void level4Restart(){
-        if(y==500&&x>150){
+        if(y==500&&x>175){
             reset();
         }
 }
@@ -173,10 +173,10 @@ public void laser(){
         up = true;
     }
         if(up) {
-            y-=1;
+            y-=1.5;
         }
         else if(up == false){
-            y+=1;
+            y+=1.5;
         }
 
 }

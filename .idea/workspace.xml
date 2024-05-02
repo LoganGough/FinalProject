@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="completely finished first level, started second level">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThirdClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThirdClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +57,20 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FinalProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -141,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712161653912</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completely finished first level, started second level">
+      <option name="closed" value="true" />
+      <created>1714580854714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714580854714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
