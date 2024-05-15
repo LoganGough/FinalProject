@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="completely finished first level, started second level">
+    <list default="true" id="9ad53c62-abcd-4f9f-a538-6ba600f48325" name="Changes" comment="did through stage 3 level 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Walls.java" afterDir="false" />
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714580854714</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="did through stage 3 level 4">
+      <option name="closed" value="true" />
+      <created>1714667191895</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714667191895</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +191,8 @@
     <MESSAGE value="Added mouse listener made game do something&#10;made second level" />
     <MESSAGE value="FINISHED FIRST LEVEL" />
     <MESSAGE value="completely finished first level, started second level" />
-    <option name="LAST_COMMIT_MESSAGE" value="completely finished first level, started second level" />
+    <MESSAGE value="did through stage 3 level 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="did through stage 3 level 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
